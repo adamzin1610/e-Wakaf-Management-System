@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>My Profile</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body data-role="applicant" data-page="aid-profile">
+    <div class="dashboard-layout">
+        <aside class="sidebar"><a class="side-brand" href="/"><span class="brand-mark"
+                    aria-label="Surau">☪</span><span><b>e-Waqf</b><small>Applicant Portal</small></span></a>
+            <div class="side-user">
+                <div class="avatar">U</div>
+                <div><b id="sideUserName">Applicant</b><small>Aid Applicant</small></div>
+            </div>
+            <nav class="side-nav"><a class="" href="/aid-dashboard.html"><span>🕌</span>Dashboard</a><a class=""
+                    href="/my-applications.html"><span>▤</span>My Applications</a><a class=""
+                    href="/aid-apply.html"><span>＋</span>New Application</a><a class="active"
+                    href="/aid-profile.html"><span>◎</span>My Profile</a></nav><a class="side-public"
+                href="/"><span>↗</span>View Public Site</a><button class="side-logout" id="logoutBtn">↪&nbsp; Sign
+                out</button>
+        </aside>
+        <main class="dashboard-main">
+            <div class="dashboard-head">
+                <div>
+                    <h1>My Profile</h1>
+                </div>
+            </div>
+            <div class="form-card">
+                <form id="profileForm">
+                    <div class="form-grid">
+                        <div class="field"><label>Username</label><input class="input" id="username" disabled></div>
+                        <div class="field"><label>Full Name</label><input class="input" id="fullName" name="fullName"
+                                required></div>
+                        <div class="field"><label>IC Number</label><input class="input" id="icNumber" name="icNumber">
+                        </div>
+                        <div class="field"><label>Contact Number</label><input class="input" id="contactNo"
+                                name="contactNo"></div>
+                        <div class="field"><label>Email</label><input class="input" id="email" type="email" name="email"
+                                required></div>
+                        <div class="field"><label>New Password (optional)</label><input class="input" type="password"
+                                name="password" minlength="6"></div>
+                    </div>
+                    <div class="form-actions"><button class="btn primary">Save Changes</button></div>
+                </form>
+            </div>
+        </main>
+    </div>
+    <script src="/js/app.js"></script>
+</body>
+
+</html>
